@@ -109,8 +109,10 @@ export default function PersonalWebsite() {
       <main className="w-full max-w-2xl">
         {showIntro ? (
           <div className="mb-6 p-4 border border-gray-400">
-            <div className="text-center mb-8">
-              <p className="text-xl italic">"Dance like no one is watching"</p>
+            <div className="text-center mb-8 border-y py-6">
+              <div className="text-xs mb-1">―</div>
+              <p className="text-base tracking-wide">Dance like no one is watching</p>
+              <div className="text-xs mt-1">―</div>
             </div>
             <p className="mb-4">
               Building <a href="https://opencommerce.xyz" className="underline">OpenCommerce</a>. Venture partner at <a href="https://collider.vc" className="underline">Collider</a>, a Tel-Aviv based crypto venture firm. I'm fascinated by AI, crypto, technology in general, and economics. I love to work on meaningful companies and projects in those areas.
@@ -160,7 +162,7 @@ export default function PersonalWebsite() {
       {/* Footer */}
       <footer className="mt-auto pt-8 text-center text-xs">
         <div className="mb-2">+--------------------+</div>
-        <div>© 2025 Idan Levin</div>
+        <div>2025</div>
       </footer>
     </div>
   )

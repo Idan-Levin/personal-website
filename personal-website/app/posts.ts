@@ -141,7 +141,18 @@ Long live the Degens 🎩`,
       date: "2021",
       title: "The Sovereign Individual",
       tags: ["reading"],
-      content: `The Sovereign Individual explores the relationship between technological innovation and megapolitical structures...`,
+      content: `I believe this book provides a great mental model of the economic future we will encounter in our lifetime. The Sovereign Individual explores the relationship between technological innovation and megapolitical structures (such as nation-states or the church before the 18th century). Many of the theories presented in this book were new to me, particularly regarding the relationship between how humans organize themselves in large groups and the return on violence (a term they use a lot) and technological innovation.
+
+The book provides great examples of megapolitical shifs, such as how the invention of the printing press and gunpowder gave rise to the concept that we now know as nation-states.
+
+I find the core idea in the book - that the invention of the transistor and the internet will fundamentally alter megapolitical structures highly likely. This suggests that during our lifetime, we are likely to witness a significant shift in the way humans collaborate on large scale groups, in a way we did not see before.
+
+Notable quotes:
+"Violence is the ultimate boundary force on behavior; this, if you can understand how the logic of violence will change, you can usefully predict where people will be dropping or picking up the equivalent of one-hundred-dollar bills in the future."
+
+"In almost every competitive area, including most of the world's multitrillion-dollar investment activity, the migration of transactions into cyberspace will be driven by an almost hydraulic pressure—the impetus to avoid predatory taxation, including the tax that inflation places upon everyone who holds his wealth in a national currency."
+
+<a href="https://www.amazon.com/Sovereign-Individual-Mastering-Transition-Information/dp/0684832720" target="_blank" class="underline">Link</a>`,
     },
     {
       id: 12,
