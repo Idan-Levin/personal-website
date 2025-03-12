@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Remove static export to let Vercel handle SSR properly
+  // output: 'export',
   images: {
     unoptimized: true
   },
