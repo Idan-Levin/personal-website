@@ -1,9 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove static export to let Vercel handle SSR properly
-  // output: 'export',
+  // The key issue is mixing static exports with server components.
+  // Let's configure this properly for Vercel deployment
   images: {
-    unoptimized: true
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
   trailingSlash: true,
 };
