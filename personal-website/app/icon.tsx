@@ -17,18 +17,19 @@ export default function Icon() {
       <div
         style={{
           fontSize: 24,
-          background: "white",
+          background: "#4285F4",
           width: "100%",
           height: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          color: "black",
+          color: "white",
           fontFamily: "monospace",
           fontWeight: 700,
+          borderRadius: "50%",
         }}
       >
-        I
+        IL
       </div>
     ),
     {
