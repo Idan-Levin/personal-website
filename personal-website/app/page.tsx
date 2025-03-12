@@ -17,7 +17,7 @@ const mono = Mono({
   subsets: ["latin"] 
 })
 
-const tags = ["crypto", "ai", "investing", "X", "reading"]
+const tags = ["entrepreneurship", "ai", "crypto", "X", "investing", "reading"]
 
 export default function PersonalWebsite() {
   const [selectedTag, setSelectedTag] = useState<string | null>(null)
@@ -47,14 +47,6 @@ export default function PersonalWebsite() {
     } else {
       setSelectedPost(post)
     }
-  }
-
-  const formatContent = (content: string) => {
-    // Replace ## headers with styled divs
-    content = content.replace(/## (.*?)\\n/g, '<div class="text-2xl font-bold mt-8 mb-4">$1</div>')
-    // Replace ### headers with styled divs
-    content = content.replace(/### (.*?)\\n/g, '<div class="text-xl font-semibold mt-6 mb-3">$1</div>')
-    return content
   }
 
   return (
@@ -115,7 +107,7 @@ export default function PersonalWebsite() {
               <div className="text-xs mt-1">―</div>
             </div>
             <p className="mb-4">
-              Building <a href="https://opencommerce.xyz" className="underline">OpenCommerce</a>. Venture partner at <a href="https://collider.vc" className="underline">Collider</a>, a Tel-Aviv based crypto venture firm. I'm fascinated by AI, crypto, technology in general, and economics. I love to work on meaningful companies and projects in those areas.
+              Building <a href="https://opencommerce.xyz" className="underline">OpenCommerce</a>. Venture partner at <a href="https://collider.vc" className="underline">Collider</a>, a Tel-Aviv based crypto venture firm. I&apos;m fascinated by AI, crypto, technology in general, and economics. I love to work on meaningful companies and projects in those areas.
             </p>
             <p className="mb-4">You can reach out to me on:</p>
             <ul className="list-disc list-inside">
