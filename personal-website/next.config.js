@@ -1,15 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // The key issue is mixing static exports with server components.
-  // Let's configure this properly for Vercel deployment
+  // Remove static export for proper Vercel deployment
+  // output: 'export',
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
   },
   trailingSlash: true,
 };
