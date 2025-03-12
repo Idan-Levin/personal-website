@@ -5,7 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
+  // Removing trailingSlash to fix redirect issues
+  // trailingSlash: true,
 };
 
 module.exports = nextConfig; 
