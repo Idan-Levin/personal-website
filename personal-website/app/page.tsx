@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import { DM_Mono as Mono } from "next/font/google"
+import Link from "next/link"
 import { posts } from "./posts"
 
 interface Post {
@@ -39,11 +40,10 @@ export default function PersonalWebsite() {
 
   const handlePostClick = (post: Post) => {
     if (post.tags.includes("X")) {
-      // Extract URL from content for X posts
-      const match = post.content.match(/href="([^"]*)"/)
-      if (match) {
-        window.open(match[1], '_blank')
-      }
+      setSelectedPost({
+        ...post,
+        content: `<a href="${post.content.match(/href="([^"]*)"/)?.[1] || '#'}" target="_blank" rel="noopener noreferrer">Open X post in new tab</a>`
+      })
     } else {
       setSelectedPost(post)
     }
@@ -107,12 +107,12 @@ export default function PersonalWebsite() {
               <div className="text-xs mt-1">―</div>
             </div>
             <p className="mb-4">
-              Building <a href="https://opencommerce.xyz" className="underline">OpenCommerce</a>. Venture partner at <a href="https://collider.vc" className="underline">Collider</a>, a Tel-Aviv based crypto venture firm. I&apos;m fascinated by AI, crypto, technology in general, and economics. I love to work on meaningful companies and projects in those areas.
+              Building <a href="https://opencommerce.xyz" target="_blank" rel="noopener noreferrer" className="underline">OpenCommerce</a>. Venture partner at <a href="https://collider.vc" target="_blank" rel="noopener noreferrer" className="underline">Collider</a>, a Tel-Aviv based crypto venture firm. I&apos;m fascinated by AI, crypto, technology in general, and economics. I love to work on meaningful companies and projects in those areas.
             </p>
             <p className="mb-4">You can reach out to me on:</p>
             <ul className="list-disc list-inside">
-              <li><a href="https://x.com/0xidanlevin" className="underline">X</a></li>
-              <li><a href="https://warpcast.com/idanlevin" className="underline">Warpcast</a></li>
+              <li><a href="https://x.com/0xidanlevin" target="_blank" rel="noopener noreferrer" className="underline">X</a></li>
+              <li><a href="https://warpcast.com/idanlevin" target="_blank" rel="noopener noreferrer" className="underline">Warpcast</a></li>
             </ul>
           </div>
         ) : selectedPost ? (
