@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Barebones config to eliminate any routing issues
-  swcMinify: true,
-  reactStrictMode: true,
+  // Remove static export for proper Vercel deployment
+  // output: 'export',
   images: {
     unoptimized: true,
   },
+  // Removing trailingSlash to fix redirect issues
+  // trailingSlash: true,
 };
 
 module.exports = nextConfig; 
